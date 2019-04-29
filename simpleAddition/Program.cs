@@ -7,6 +7,8 @@ namespace myApp
  
         static void Main(string[] args)
         {
+            /* Simple console read and addition example */
+
             Console.WriteLine("Hello Flemming!");
             Program program = new Program();
 
@@ -17,20 +19,23 @@ namespace myApp
 
             int result = program.add(int.Parse(input1), int.Parse(input2));
             Console.WriteLine("The result is: " + result);
-            // Console.WriteLine("The current time is " + DateTime.Now);
-            // Console.ReadLine();
+             
+
+            
+            
         }
 
 
-
-        void print(int i)
-        {
-            Console.WriteLine(i);
-        }
 
         public int add(int num1, int num2)
         {
             return num1 + num2;
+        }
+
+        public static String readFile(String fileName)
+        {
+
+            return null;
         }
 
     }
